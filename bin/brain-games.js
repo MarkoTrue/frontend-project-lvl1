@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log ("Welcome to the Brain Games!");
+import { welcomingFunc } from "../src/cli.js";
+welcomingFunc()
