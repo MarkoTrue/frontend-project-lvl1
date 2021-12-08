@@ -1,3 +1,0 @@
-lint:
-	npx eslint .
-	
