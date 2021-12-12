@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import welcomingFunc from './cli.js';
-
-import { userName } from './cli.js';
+import welcomingFunc, { userName } from './cli.js';
 
 welcomingFunc();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -21,16 +19,15 @@ function firstResult() {
   }
   if (userAnswer === corAnswer) {
     console.log('Correct!');
-  }
-  else if (userAnswer !== corAnswer) {
-    console.log(userAnswer + ' is wrong answer ;(. Correct answer was ' + corAnswer);
+  } else if (userAnswer !== corAnswer) {
+    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${corAnswer}`);
   }
 }
 function whi() {
   for (let i = 0; i < 3; i += 1) {
     firstResult();
   }
-  return console.log('Congratulations, ' + userName + '!');
+  return console.log(`Congratulations, ${userName}!`);
 }
 
 export default whi;
