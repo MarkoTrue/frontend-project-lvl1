@@ -20,7 +20,7 @@ function firstResult() {
   if (userAnswer === corAnswer) {
     console.log('Correct!');
   } else if (userAnswer !== corAnswer) {
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${corAnswer}`);
+    console.log(`${userAnswer} is wrong answer ;(. Correct answer was '${corAnswer}'`);
   }
 }
 function whi() {
