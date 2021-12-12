@@ -12,10 +12,10 @@ function firstResult() {
   const userAnswer = readlineSync.question('Your answer: ');
   let corAnswer = '';
   if (randomNum % 2 === 0) {
-    corAnswer = "'yes'";
+    corAnswer = 'yes';
   }
   if (randomNum % 2 !== 0) {
-    corAnswer = "'no'";
+    corAnswer = 'no';
   }
   if (userAnswer === corAnswer) {
     console.log('Correct!');
