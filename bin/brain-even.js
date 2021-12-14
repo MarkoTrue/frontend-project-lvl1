@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import whi from '../src/kli.js';
+import whi from '../src/even.js';
 
 whi();
