@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/MarkoTrue/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/MarkoTrue/frontend-project-lvl1/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js",
+    "brain-game": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calculate.js"
   },
