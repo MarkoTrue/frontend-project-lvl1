@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import whi from '../src/even.js';
+import startGameEven from '../src/games/even.js';
 
-whi();
+startGameEven();
