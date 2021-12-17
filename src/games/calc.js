@@ -5,7 +5,7 @@ import randomNum from '../getRandom.js';
 const gameRules = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const makeCount = (number1, number2, operator) => {
-  switch (operators) {
+  switch (operator) {
     case '+':
       return number1 + number2;
     case '-':
@@ -18,11 +18,12 @@ const makeCount = (number1, number2, operator) => {
 };
 
 function createGameQuestionAnswer() {
-  const randomNum1 = randomNum(1, 100);
-  const randomNum2 = randomNum(1, 100);
-  const randomOperator = operators[randomNum(0, 2)];
-  const gameQuestion = `${randomNum1} ${randomOperator} ${randomNum2}`;
-  const gameAnswer = String(makeCount(randomNum1, randomNum2, randomOperator));
+  const randomOperatorNumber = 2;
+  const randomNum1 = randomNum(0, 100);
+  const randomNum2 = randomNum(0, 100);
+  const randomOperator = randomNum(0, randomOperatorNumber);
+  const gameQuestion = `${randomNum1} ${operators[randomOperator]} ${randomNum2}`;
+  const gameAnswer = String(makeCount(randomNum1, randomNum2, operators[randomOperator]));
   return [gameQuestion, gameAnswer];
 }
 const startGameCalc = () => gameLogic(gameRules, createGameQuestionAnswer);
