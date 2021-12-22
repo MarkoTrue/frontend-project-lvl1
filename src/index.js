@@ -10,7 +10,7 @@ function gameLogic(gameRules, createGameQuestionAnswer) {
   for (let i = 0; i < numberofGames; i += 1) {
     const [gameQuestion, gameAnswer] = createGameQuestionAnswer();
     console.log(`Question: ${gameQuestion}`);
-    const yourAnswer = readlineSync.question('Your asnwer: ');
+    const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer !== gameAnswer) {
       console.log(`${yourAnswer} is  wrong answer ;(. Correct answer is ${gameAnswer}`);
       console.log(`Let's try again, ${userName}`);
