@@ -4,3 +4,4 @@
 [![Node CI](https://github.com/MarkoTrue/frontend-project-lvl1/actions/workflows/github-actions.js.yml/badge.svg)](https://github.com/MarkoTrue/frontend-project-lvl1/actions/workflows/github-actions.js.yml)
 https://asciinema.org/~MarkoTrue
 https://asciinema.org/a/L9Da0M0OkOBiuHudPm5voFrq2
+https://asciinema.org/a/OGLf38OJM2C2ZEzlchgMojOsv
