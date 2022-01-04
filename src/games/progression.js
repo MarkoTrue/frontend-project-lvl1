@@ -16,7 +16,7 @@ function createGameQuestionAnswer() {
   const gameQuestion = progression();
   const randomElement = randomNum(1, 9);
   const gameAnswer = gameQuestion.splice(randomElement, 1, '..');
-  return [String(gameQuestion), String(gameAnswer)];
+  return [gameQuestion.join(' '), String(gameAnswer)];
 }
 const startGameProgres = () => gameLogic(gameRules, createGameQuestionAnswer);
 
