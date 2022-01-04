@@ -13,7 +13,7 @@ function gameLogic(gameRules, createGameQuestionAnswer) {
     const yourAnswer = readlineSync.question('Your answer: ');
     if (yourAnswer !== gameAnswer) {
       console.log(`${yourAnswer} is  wrong answer ;(. Correct answer is ${gameAnswer}`);
-      console.log(`Let's try again, ${userName}`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');
