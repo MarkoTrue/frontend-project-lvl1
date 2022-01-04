@@ -12,3 +12,5 @@ function createGameQuestionAnswer() {
 const startGameEven = () => gameLogic(gameRules, createGameQuestionAnswer);
 
 export default startGameEven;
+
+export { isEven };
